@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/75b65e628f.js" crossorigin="anonymous"></script>
+    <title>Characters Page</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <h1>
+            <a href="index.html">Vider</a>
+        </h1>
+        <nav class="navi">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Characters.html">Character</a></li>
+                <li><a href="create.html">Create</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="contents"> 
+
+        <div id="canvas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        <div class="rectangle">
+            <button id="download" onclick="savePage()">Save</button>
+            <button>Import</button>
+
+            <div class="Characters">
+                <img id="drag1" src="assets/Characters1.png" draggable="true" ondragstart="drag(event)" width ="70";
+                height="180" alt="">
+                <img id="drag2" src="assets/Characters2.png" draggable="true" ondragstart="drag(event)"width ="70";
+                height="180" alt="">
+                <img id="drag3" src="assets/Characters3.png" draggable="true" ondragstart="drag(event)"width ="70";
+                height="180" alt="">
+                <img id="drag4" src="assets/Characters4.png" draggable="true" ondragstart="drag(event)"width ="70";
+                height="180" alt="">
+                <img id="drag5" src="assets/Characters5.png" draggable="true" ondragstart="drag(event)"width ="70";
+                height="180" alt="">
+                <img id="drag6" src="assets/Characters6.png" draggable="true" ondragstart="drag(event)"width ="70";
+                height="180" alt="">
+                <img id="drag7" src="assets/Characters7.png" draggable="true" ondragstart="drag(event)"width ="70";
+                height="180" alt="">
+                <img id="drag8" src="assets/Characters8.png" draggable="true" ondragstart="drag(event)"width ="70";
+                height="180" alt="">
+            </div>
+  
+            <div class="button">
+                <i class="fas fa-angle-double-left"></i>
+            </div>
+        </div>
+    </div>
+   
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

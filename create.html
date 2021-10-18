@@ -1,0 +1,364 @@
+<html>
+<head>
+  <title>Create Page</title>
+
+<style>
+
+body{
+	margin:0 0 0 0; 
+	padding:0 0 0 0;
+}
+
+#header{
+	background-color: #222222;
+	font-family: 'poppins';
+	font-weight : bold;
+	padding : 0.5px;
+	text-align: center;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	z-index: 1;
+}
+
+#header h1 a{
+	text-decoration: none;
+	color : #ffffff;
+}
+
+.navi{
+	background: #2196f3; 
+	height: 42px;
+}
+
+.navi a{
+	text-decoration: none; 
+	font-size: 18px;
+	font-family: sans-serif;
+	padding: 10px 10px;
+}
+
+.navi ul{
+	padding: 10px;
+}
+
+.navi li{
+	list-style: none; 
+	display: inline;
+}
+
+.navi li a{
+	background: #2196f3; 
+	color:#ffffff;
+}
+
+.navi li a:hover{
+	background: #7952b3; 
+	color:#fff;
+	letter-spacing: 1px;
+	transition: 0.5s;
+}
+
+.bisa-pindah {
+  position: absolute;
+  
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  width: 100px;
+}
+#kotak{
+	height: 100%;
+	width: 100%;
+	background: #1c1c26;
+}
+
+#button >i{
+	color: white;
+}
+
+#rectangle{
+	position: relative;
+	width: 300px;
+	height: 86vh;
+	transition: all 1s;
+}
+
+#button{
+	position: absolute;
+	right: -20px;
+	top: 50%;
+}
+
+#rotate{
+	transform: rotate(180deg);
+}
+
+#mendem{
+	width: 0;
+}
+
+.btn{
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-left: 280px;
+  background-color: #222222;
+}
+
+.btn button{
+  border-radius: 6px;
+  border-color: #2196f3; 
+  cursor :pointer;
+  color : white;
+  background-color: #222222; 
+}
+
+.btn button:hover{
+  background-color: #2196f3;
+}
+
+.footer{
+	background-color : #111111;
+	color: white;
+	font-size: 12px;
+	font-family: 'poppins';
+	font-weight: normal;
+	text-align: center;
+	padding: 2px 25px 2px 25px;
+}
+
+</style>
+</head>
+<body>
+
+  <div id="header">
+    <h1>
+      <a href="index.html">Vider</a>
+    </h1>
+    <nav class="navi">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Characters.html">Character</a></li>
+        <li><a href="create.html">Create</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+<div class="btn">
+  <button onclick="createMyAnimation1()">Animation1</button>
+  <button onclick="createMyAnimation2()">Animation2</button>
+  <button onclick="createMyAnimation3()">Animation3</button>
+  <button onclick="createMyAnimation4()">Animation4</button>
+  <button onclick="createMyAnimation5()">Animation5</button>
+  <button onclick="createMyAnimation6()">Animation6</button>
+  <button onclick="createMyAnimation7()">Animation7</button>
+  <button onclick="createMyAnimation8()">Animation8</button>
+  <button onclick="savePage()">Save Page</button>
+</div>
+
+
+
+
+<div id="Kotak">
+<!-- kosong -->
+</div>
+
+<div class="footer">
+  <h2>About Us</h2>
+  <p>&#169; 2021 Vider. All rights reserved. </p>
+</div>
+
+<script>
+let counter = 0;
+
+function createMyAnimation1() {
+	let newDiv = document.createElement('div');
+  
+    newDiv.setAttribute('class', "bisa-pindah");
+    newDiv.innerHTML = "<img src= 'assets/Characters1.png' width ='70' height = '180'>";
+    newDiv.style.backgroundColor = "#1c1c26";
+    newDiv.style.borderColor = "#1c1c26";
+    
+    /*let kotak = document.getElementById("img");*/
+    Kotak.append(newDiv);
+    
+    dragElement(newDiv);
+}
+
+function createMyAnimation2() {
+	let newDiv = document.createElement('div');
+  
+    newDiv.setAttribute('class', "bisa-pindah");
+    newDiv.innerHTML = "<img src= 'assets/Characters2.png' width ='70' height = '180'>";
+    newDiv.style.backgroundColor = "#1c1c26";
+    newDiv.style.borderColor = "#1c1c26";
+    
+    /*let kotak = document.getElementById("img");*/
+    Kotak.append(newDiv);
+    
+    dragElement(newDiv);
+}
+
+function createMyAnimation3() {
+	let newDiv = document.createElement('div');
+  
+    newDiv.setAttribute('class', "bisa-pindah");
+    newDiv.innerHTML = "<img src= 'assets/Characters3.png' width ='70' height = '180'>";
+    newDiv.style.backgroundColor = "#1c1c26";
+    newDiv.style.borderColor = "#1c1c26";
+    
+    /*let kotak = document.getElementById("img");*/
+    Kotak.append(newDiv);
+    
+    dragElement(newDiv);
+}
+
+function createMyAnimation4() {
+	let newDiv = document.createElement('div');
+  
+    newDiv.setAttribute('class', "bisa-pindah");
+    newDiv.innerHTML = "<img src= 'assets/Characters4.png' width ='70' height = '180'>";
+    newDiv.style.backgroundColor = "#1c1c26";
+    newDiv.style.borderColor = "#1c1c26";
+    
+    /*let kotak = document.getElementById("img");*/
+    Kotak.append(newDiv);
+    
+    dragElement(newDiv);
+}
+
+function createMyAnimation5() {
+	let newDiv = document.createElement('div');
+  
+    newDiv.setAttribute('class', "bisa-pindah");
+    newDiv.innerHTML = "<img src= 'assets/Characters5.png' width ='70' height = '180'>";
+    newDiv.style.backgroundColor = "#1c1c26";
+    newDiv.style.borderColor = "#1c1c26";
+    
+    /*let kotak = document.getElementById("img");*/
+    Kotak.append(newDiv);
+    
+    dragElement(newDiv);
+}
+
+function createMyAnimation6() {
+	let newDiv = document.createElement('div');
+  
+    newDiv.setAttribute('class', "bisa-pindah");
+    newDiv.innerHTML = "<img src= 'assets/Characters6.png' width ='70' height = '180'>";
+    newDiv.style.backgroundColor = "#1c1c26";
+    newDiv.style.borderColor = "#1c1c26";
+    
+    /*let kotak = document.getElementById("img");*/
+    Kotak.append(newDiv);
+    
+    dragElement(newDiv);
+}
+
+function createMyAnimation7() {
+	let newDiv = document.createElement('div');
+  
+    newDiv.setAttribute('class', "bisa-pindah");
+    newDiv.innerHTML = "<img src= 'assets/Characters7.png' width ='70' height = '180'>";
+    newDiv.style.backgroundColor = "#1c1c26";
+    newDiv.style.borderColor = "#1c1c26";
+    
+    /*let kotak = document.getElementById("img");*/
+    Kotak.append(newDiv);
+    
+    dragElement(newDiv);
+}
+
+function createMyAnimation8() {
+	let newDiv = document.createElement('div');
+  
+    newDiv.setAttribute('class', "bisa-pindah");
+    newDiv.innerHTML = "<img src= 'assets/Characters8.png' width ='70' height = '180'>";
+    newDiv.style.backgroundColor = "#1c1c26";
+    newDiv.style.borderColor = "#1c1c26";
+    
+    /*let kotak = document.getElementById("img");*/
+    Kotak.append(newDiv);
+    
+    dragElement(newDiv);
+}
+
+
+
+function writeToContentEditor (Character) {
+    document.getElementById("kotak")
+        .innerHTML = Character;
+}
+
+function savePage() {
+	let kanvas = document.getElementsByClassName(".canvas");
+	let isiKanvas = kanvas.innerHTML;
+    // save ke file lokal
+    saveFile(isiKanvas);
+}
+
+async function saveFile(content) {
+
+  // create a new handle
+  const newHandle = await window.showSaveFilePicker();
+
+  // create a FileSystemWritableFileStream to write to
+  const writableStream = await newHandle.createWritable();
+
+  // write our file
+  await writableStream.write(content);
+
+  // close the file and write the contents to disk.
+  await writableStream.close();
+}
+
+//Make the DIV element draggagle:
+// dragElement(document.getElementById("mydiv"));
+// dragElement(document.getElementById("mydiv2"));
+// dragElement(document.getElementById("mydiv3"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+
+
+
+</body>
+</html>

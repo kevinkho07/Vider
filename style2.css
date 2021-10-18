@@ -1,0 +1,155 @@
+body{
+	margin:0; 
+	padding:0;
+	background-color: #151419;
+}
+
+#header{
+	background-color: #222222;
+	font-family: 'poppins';
+	font-weight : bold;
+	padding : 0.5px;
+	text-align: center;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	z-index: 1;
+}
+
+#header h1 a{
+	text-decoration: none;
+	color : #ffffff;
+}
+
+.navi{
+	background: #2196f3; 
+	height: 42px;
+}
+
+.navi a{
+	text-decoration: none; 
+	font-size: 18px;
+	font-family: sans-serif;
+	padding: 10px 10px;
+}
+
+.navi ul{
+	padding: 10px;
+}
+
+.navi li{
+	list-style: none; 
+	display: inline;
+}
+
+.navi li a{
+	background: #2196f3; 
+	color:#ffffff;
+}
+
+.navi li a:hover{
+	background: #7952b3; 
+	color:#fff;
+	letter-spacing: 1px;
+	transition: 0.5s;
+}
+
+
+.navbar {
+	background-color: #22212c;
+  	font-family : 'poppins';
+	font-weight : bold;
+	color : white;
+	padding : 0.5px; 
+}
+
+
+.image img{
+	width: 40px;
+	margin-right: 10px;
+}
+
+.navbar-nav{
+	display: flex;
+	height : 50px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.image {
+	display: flex;
+	align-items: center;
+	margin-right: 2%;
+}
+
+.navbar-nav .nav-item >a{
+	margin: 0 20px;
+	color : white;
+	text-decoration: none;
+	padding: 10px;
+}
+
+.nav-item a:hover{
+	background-color: #151419;
+}
+
+.button i{
+	color: white;
+}
+
+.rectangle{
+	position: relative;
+	width: 300px;
+	height: 650px;
+	background : #22212c;
+	transition: all 1s;
+	display: block;
+}
+
+
+.rectangle button{
+	margin : 10px;
+	margin-left: 50px;
+	border-radius: 6px;
+  	border-color: #2196f3; 
+  	cursor :pointer;
+  	color : white;
+  	background-color: #222222; 
+}
+
+.rectangle button:hover{
+	background-color: #2196f3;
+  }
+
+.Characters img{
+	width: 70px;
+	height: 180px;
+	padding : 10px;
+}
+
+#canvas {
+	float:right;
+	width: 1000px;
+    height: 650px;
+	padding: 10px;
+    background: #151419;
+}
+
+.button{
+	position: absolute;
+	right: -20px;
+	top: 50%;
+	display: flex;
+}
+
+.rotate{
+	transform: rotate(180deg);
+}
+
+.tutup{
+	width: 0;
+}
+
+.fa-angle-double-left{
+	transition: all 1s;
+}
